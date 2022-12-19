@@ -1,6 +1,4 @@
-body{
-    background: #ade5f5;
-    height: 100vh;
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,6 +14,7 @@ body{
         animation-iteration-count: infinite;
         animation-delay: 2s;
         animation-direction: normal;
+        
 }
 .animation{
     display: inline-block;
@@ -28,6 +27,7 @@ body{
     animation-iteration-count: infinite;
     animation-delay: 2s;
     animation-direction: reverse;
+    z-index: 1;
 }
 @keyframes sport-car{
     0%{
@@ -59,4 +59,18 @@ body{
 .sportcar-animation img{
     width: 200px;
     vertical-align: middle;
+}
+.background{
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    transition-property: all;
+    transition-delay: 0.5s;
+    transition-duration: 0.9s;
+    transition-timing-function: linear 
+    
+}
+.background:hover {
+    background-image: url('./images/night.jpg');
 }
