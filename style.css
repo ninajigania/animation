@@ -11,7 +11,15 @@ body{
     animation-duration: 2s;
     animation-timing-function: linear;
 }
-
+.cabriolet-animation{
+    display: inline-block;
+}
+.sportcar-animation img{
+    width: 120px;
+}
+.cabriolet-animation img{
+    width: 120px;
+}
 @keyframes sport-car{
     0%{
         left: 0;
