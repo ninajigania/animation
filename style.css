@@ -7,27 +7,52 @@ body{
 }
 .sportcar-animation{
     display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    left: 0;
     animation-name: sport-car;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction: normal;
+}
+@keyframes sport-car{
+    0%{
+        left: 0%;
+    }
+    50%{
+        border-radius: 0%;
+    }
+    100%{
+        left: 50%;
+    }
 }
 .cabriolet-animation{
+    margin-left: 85%;
     display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    animation-name:cabriolet;
+    animation-duration: 2.5s;
+    animation-timing-function:linear ;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+@keyframes carbiolet{
+    0%{
+        left: 0%;
+    }
+    50%{
+        border-radius: 0%;
+    }
+    100%{
+        left: 50%;
+    }
 }
 .sportcar-animation img{
     width: 120px;
 }
 .cabriolet-animation img{
     width: 120px;
-}
-@keyframes sport-car{
-    0%{
-        left: 0;
-    }
-    50%{
-
-    }
-    100%{
-        left: 500px;
-    }
 }
