@@ -1,0 +1,14 @@
+body{
+    background: #ade5f5;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box {
+    display: inline-block;
+}
+.box img{
+    width:200px;
+    
+}
